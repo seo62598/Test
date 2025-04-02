@@ -1,0 +1,235 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Updated font */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #ffffff; /* Changed background to white */
+    color: #333;
+}
+
+.container { /* Optional container for centering content */
+    width: 90%; /* Slightly wider */
+    max-width: 1200px; /* Added max-width */
+    margin: auto;
+    overflow: hidden;
+}
+
+a {
+    color: #f39c12; /* Changed primary color to orange */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #e67e22; /* Darker orange on hover */
+}
+
+/* Header Styles */
+header {
+    background: #2c3e50; /* Darker background */
+    color: #ffffff; /* White text */
+    padding: 1rem 0;
+    /* border-bottom: #007bff 3px solid; */ /* Removed blue border */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Vertically align items */
+    justify-content: space-around; /* Space out items */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.logo-placeholder { /* Style for logo */
+    font-weight: bold;
+    font-size: 1.5rem;
+    /* Add image styles here if using a real logo */
+}
+
+header h1 {
+    /* text-align: center; */ /* Removed center align */
+    margin: 0;
+    /* padding-bottom: 0.5rem; */
+    font-size: 1.8rem; /* Adjusted size */
+    flex-grow: 1; /* Allow title to take space */
+    text-align: center; /* Center if needed */
+    padding: 0 20px; /* Add some padding */
+}
+
+header nav ul {
+    padding: 0;
+    list-style: none;
+    /* text-align: center; */ /* Removed center align */
+    margin: 0; /* Reset margin */
+}
+
+header nav ul li {
+    display: inline-block; /* Use inline-block for better spacing control */
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #ffffff; /* White links */
+    font-weight: bold; /* Make nav links bold */
+}
+
+header nav ul li a:hover {
+    color: #f39c12; /* Orange hover for nav links */
+    text-decoration: none; /* Remove underline on hover */
+}
+
+
+/* Main Content Styles */
+main {
+    padding: 30px 20px; /* Increased padding */
+    min-height: 400px; /* Ensure footer doesn't jump up */
+}
+
+main h2 {
+    color: #2c3e50; /* Use header background color for headings */
+    margin-bottom: 20px;
+}
+
+/* Style sections for better separation */
+main section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #f9f9f9; /* Light grey background for sections */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow */
+}
+
+
+/* CTA Contact Block Styles */
+.cta-contact {
+    background: #e9ecef; /* Lighter grey */
+    padding: 30px; /* Increased padding */
+    margin-top: 30px;
+    border-radius: 8px; /* Slightly more rounded */
+    text-align: center;
+}
+
+.cta-contact h3 {
+    margin-top: 0;
+    color: #2c3e50; /* Match heading color */
+    margin-bottom: 15px; /* Add space below heading */
+}
+
+.button {
+    display: inline-block;
+    background: #f39c12; /* Changed to orange */
+    color: #ffffff; /* White text */
+    padding: 12px 25px; /* Adjusted padding */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.1rem; /* Slightly larger font */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.button:hover {
+    background: #e67e22; /* Darker orange on hover */
+    text-decoration: none; /* Ensure no underline */
+    color: #ffffff; /* Keep text white */
+}
+
+/* Footer Styles */
+footer {
+    background: #2c3e50; /* Match header background */
+    color: #bdc3c7; /* Lighter grey text */
+    /* text-align: center; */ /* Remove center align */
+    padding: 2rem 0; /* Increased padding */
+    margin-top: 40px; /* Increased margin */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    text-align: left; /* Align text left within sections */
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px; /* Minimum width for sections */
+    margin: 10px 20px; /* Add margin between sections */
+}
+
+.footer-section h4 {
+    color: #ffffff; /* White headings */
+    margin-bottom: 15px;
+    border-bottom: 1px solid #f39c12; /* Orange underline */
+    padding-bottom: 5px;
+    display: inline-block; /* Fit border to text */
+}
+
+footer p {
+    margin: 0 0 0.5rem 0;
+    font-size: 0.9rem; /* Slightly smaller text */
+}
+
+footer ul { /* Reset list styles for footer links */
+    padding: 0;
+    list-style: none;
+}
+
+footer ul li {
+    margin-bottom: 8px; /* Space between links */
+    /* display: inline; */ /* Changed to block for vertical list */
+    /* margin: 0 10px; */
+}
+
+footer ul li a {
+    color: #bdc3c7; /* Match footer text color */
+}
+
+footer ul li a:hover {
+    color: #ffffff; /* White on hover */
+    text-decoration: underline; /* Add underline on hover */
+}
+
+
+/* Basic Form Styles (for kontakt.html later) */
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 12px; /* Increased padding */
+    margin-bottom: 15px; /* Increased margin */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    font-size: 1rem; /* Ensure consistent font size */
+}
+
+form textarea {
+    height: 150px;
+    resize: vertical; /* Allow vertical resize */
+}
+
+form button {
+    /* Reuse button style - already updated above */
+    display: inline-block;
+    background: #f39c12;
+    color: #ffffff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background: #e67e22;
+    color: #ffffff;
+}
